@@ -18,4 +18,5 @@ else ()
     add_compile_options(/W4)
 endif ()
 
+add_subdirectory(${CMAKE_SOURCE_DIR}/src)
 add_subdirectory(test/unit_test)

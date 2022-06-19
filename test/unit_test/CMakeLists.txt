@@ -19,10 +19,30 @@ add_executable(
 )
 target_include_directories(
         disjoint_set_test
-        PUBLIC ../../src
+        PUBLIC ${CMAKE_SOURCE_DIR}/src
 )
 target_link_libraries(
         disjoint_set_test
-        gtest_main
+        PRIVATE gtest_main
 )
-gtest_discover_tests(disjoint_set_test)
+gtest_discover_tests(
+        disjoint_set_test
+        DISCOVERY_TIMEOUT 120 # 指定超时时间.
+)
+
+add_executable(
+        suffix_array_test
+        suffix_array_test.cpp
+)
+target_include_directories(
+        suffix_array_test
+        PUBLIC ${CMAKE_SOURCE_DIR}/src
+)
+target_link_libraries(
+        suffix_array_test
+        PRIVATE gtest_main suffix_array
+)
+gtest_discover_tests(
+        suffix_array_test
+        DISCOVERY_TIMEOUT 120 # 指定超时时间.
+)

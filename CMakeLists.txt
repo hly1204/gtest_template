@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 if (NOT MSVC)
-    add_compile_options(-Od)
+    add_compile_options(-O0)
     add_compile_options(-Wall)
     add_compile_options(-Werror)
     add_compile_options(-fsanitize=undefined,address)

@@ -29,4 +29,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build/html
-          single-commit: yes
+          single-commit: true

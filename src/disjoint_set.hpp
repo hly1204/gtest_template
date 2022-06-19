@@ -1,8 +1,9 @@
+/// \file     disjoint_set.hpp
+
 #ifndef DISJOINT_SET_HPP
 #define DISJOINT_SET_HPP
 
 #include <numeric>
-#include <utility>
 #include <vector>
 
 namespace test {

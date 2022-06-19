@@ -1,3 +1,5 @@
+/// \file     suffix_array.cpp
+
 #include "suffix_array.h"
 #include <algorithm>
 #include <string>

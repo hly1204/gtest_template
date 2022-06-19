@@ -8,6 +8,7 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+# 该宏定义需要到对应路径下的调用 `ctest` 命令, 而不是在构建的目录下.
 enable_testing()
 
 include(GoogleTest)

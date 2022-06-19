@@ -1,0 +1,24 @@
+name: Unit test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Build
+        run: |
+          cmake -S . -B build
+          cmake --build build
+
+      - name: Run tests
+        run: |
+          cd build/test/unit_test
+          ctest

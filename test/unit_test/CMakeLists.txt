@@ -17,6 +17,7 @@ add_executable(
         disjoint_set_test
         disjoint_set_test.cpp
 )
+# 需要包含头文件路径, 因为这是一个 header only 的头文件.
 target_include_directories(
         disjoint_set_test
         PUBLIC ${CMAKE_SOURCE_DIR}/src
@@ -34,13 +35,9 @@ add_executable(
         suffix_array_test
         suffix_array_test.cpp
 )
-target_include_directories(
-        suffix_array_test
-        PUBLIC ${CMAKE_SOURCE_DIR}/src
-)
 target_link_libraries(
         suffix_array_test
-        PRIVATE gtest_main suffix_array
+        PRIVATE gtest_main suffix_array # 不需要为 suffix_array_test.h 中的头文件设置路径, 因为这里已经自动设置了.
 )
 gtest_discover_tests(
         suffix_array_test

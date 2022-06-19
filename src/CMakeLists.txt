@@ -1,13 +1,26 @@
-# 与只有头文件的不同, 我们在这里将其编译为二进制, 在单元测试中进行链接
+# 与只有头文件的不同, 我们在这里将其编译为二进制, 在单元测试中进行链接.
 
+#[[
 add_library(
     suffix_array
     STATIC
 )
 
-# 后面再定义库的生成方法, 因为目标不需要包含头文件, 所以不用设置 `target_include_directories` 了
 target_sources(
     suffix_array
     PRIVATE suffix_array.cpp
-    PUBLIC suffix_array.h
+)
+]]
+
+
+add_library(
+    suffix_array
+    STATIC
+    suffix_array.cpp
+)
+
+# 将头文件所在的路径设置为 `PUBLIC` 属性, 后面只需要链接这个库自动回复包含这个路径.
+target_include_directories(
+    suffix_array
+    PUBLIC ${CMAKE_SOURCE_DIR}/src
 )

@@ -20,7 +20,7 @@ add_executable(
 # 需要包含头文件路径, 因为这是一个 header only 的头文件.
 target_include_directories(
         disjoint_set_test
-        PUBLIC ${CMAKE_SOURCE_DIR}/src
+        PUBLIC ${CMAKE_SOURCE_DIR}/example
 )
 target_link_libraries(
         disjoint_set_test

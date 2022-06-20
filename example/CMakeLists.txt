@@ -12,7 +12,6 @@ target_sources(
 )
 ]]
 
-
 add_library(
     suffix_array
     STATIC
@@ -22,5 +21,5 @@ add_library(
 # 将头文件所在的路径设置为 `PUBLIC` 属性, 后面只需要链接这个库自动回复包含这个路径.
 target_include_directories(
     suffix_array
-    PUBLIC ${CMAKE_SOURCE_DIR}/src
+    PUBLIC ${CMAKE_SOURCE_DIR}/example
 )

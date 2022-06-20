@@ -18,5 +18,5 @@ else ()
     add_compile_options(/W4)
 endif ()
 
-add_subdirectory(src)
+add_subdirectory(example)
 add_subdirectory(test/unit_test)

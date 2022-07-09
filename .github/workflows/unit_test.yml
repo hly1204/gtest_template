@@ -15,7 +15,7 @@ jobs:
 
       - name: Build
         run: |
-          cmake -S . -B build
+          cmake -S . -B build -DCMAKE_CXX_COMPILER=/bin/g++ -DCMAKE_C_COMPILER=/bin/gcc
           cmake --build build
 
       - name: Run tests

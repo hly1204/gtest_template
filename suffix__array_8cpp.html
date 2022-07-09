@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GTestTemplate: example/suffix_array.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GTestTemplate
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('suffix__array_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">suffix_array.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="suffix__array_8h_source.html">suffix_array.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+suffix_array.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="suffix__array_8cpp__incl.png" border="0" usemap="#example_2suffix__array_8cpp" alt=""/></div>
+<map name="example_2suffix__array_8cpp" id="example_2suffix__array_8cpp">
+<area shape="rect" title=" " alt="" coords="31,5,217,32"/>
+<area shape="rect" href="suffix__array_8h.html" title=" " alt="" coords="24,80,133,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" title=" " alt="" coords="91,155,154,181"/>
+<area shape="rect" title=" " alt="" coords="208,80,293,107"/>
+</map>
+</div>
+</div>
+<p><a href="suffix__array_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a66b29a4f3c7025c689789462aab2d3d2"><td class="memItemLeft" align="right" valign="top"><a id="a66b29a4f3c7025c689789462aab2d3d2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_S_TYPE</b>(x)&#160;&#160;&#160;(t[x])</td></tr>
+<tr class="separator:a66b29a4f3c7025c689789462aab2d3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8948b8a8c0ddde44162917cacfcd39"><td class="memItemLeft" align="right" valign="top"><a id="abe8948b8a8c0ddde44162917cacfcd39"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_L_TYPE</b>(x)&#160;&#160;&#160;(!t[x])</td></tr>
+<tr class="separator:abe8948b8a8c0ddde44162917cacfcd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d7e5eba86d328f3d5158f77f3a520a"><td class="memItemLeft" align="right" valign="top"><a id="a33d7e5eba86d328f3d5158f77f3a520a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_LMS_TYPE</b>(x)&#160;&#160;&#160;(IS_S_TYPE(x) &amp;&amp; x != 0 &amp;&amp; IS_L_TYPE(x - 1))</td></tr>
+<tr class="separator:a33d7e5eba86d328f3d5158f77f3a520a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a075bf6e1075cab2717cbb206e6deb8ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="suffix__array_8cpp.html#a075bf6e1075cab2717cbb206e6deb8ce">detail::SA_IS</a> (const std::vector&lt; int &gt; &amp;s, int K)</td></tr>
+<tr class="memdesc:a075bf6e1075cab2717cbb206e6deb8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">诱导排序.  <a href="suffix__array_8cpp.html#a075bf6e1075cab2717cbb206e6deb8ce">更多...</a><br /></td></tr>
+<tr class="separator:a075bf6e1075cab2717cbb206e6deb8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5bb2c01520762b9b6da27b19d99d74"><td class="memTemplParams" colspan="2"><a id="aca5bb2c01520762b9b6da27b19d99d74"></a>
+template&lt;typename ContainerT &gt; </td></tr>
+<tr class="memitem:aca5bb2c01520762b9b6da27b19d99d74"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>detail::suffix_array</b> (ContainerT &amp;&amp;s)</td></tr>
+<tr class="separator:aca5bb2c01520762b9b6da27b19d99d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a075bf6e1075cab2717cbb206e6deb8ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075bf6e1075cab2717cbb206e6deb8ce">&#9670;&nbsp;</a></span>SA_IS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; detail::SA_IS </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>K</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>诱导排序. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>字符串数组, <code>0</code> 为最小值且以 <code>0</code> 结尾. </td></tr>
+    <tr><td class="paramname">K</td><td>字符集值域为 \([0, K)\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>时间复杂度为 \(O(n)\). </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="suffix__array_8cpp_source.html">suffix_array.cpp</a> 第 <a class="el" href="suffix__array_8cpp_source.html#l00014">14</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="suffix__array_8cpp_source.html#l00014">detail::SA_IS()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cfafba98a580ce4b62f8a6fa96d7cbb0.html">example</a></li><li class="navelem"><a class="el" href="suffix__array_8cpp.html">suffix_array.cpp</a></li>
+    <li class="footer">生成于 2022年 七月 9日 星期六 14:02:27 , 为 GTestTemplate使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

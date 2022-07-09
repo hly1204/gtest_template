@@ -1,7 +1,8 @@
 #include "disjoint_set.hpp"
 #include <gtest/gtest.h>
 
-TEST(DisjointSetTest, SmallTest) {
+// 一般将类/函数名作为第一个参数, 后跟随测试的类型
+TEST(DisjointSetPathCompression, SmallTest) {
     test::DisjointSet *d = new test::DisjointSetPathCompression(2);
     EXPECT_NE(d->find(0), d->find(1));
     d->unite(0, 1);
@@ -9,7 +10,7 @@ TEST(DisjointSetTest, SmallTest) {
     delete d;
 }
 
-TEST(DisjointSetTest, BigTest) {
+TEST(DisjointSetPathCompression, BigTest) {
     test::DisjointSet *d = new test::DisjointSetPathCompression(200);
     for (int i = 0; i != 100; ++i) {
         EXPECT_NE(d->find(i), d->find(i + 100));

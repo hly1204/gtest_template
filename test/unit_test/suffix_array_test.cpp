@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-TEST(SuffixArrayTest, BasicTest) {
+TEST(suffix_array, BasicTest) {
     std::string s("mississippi"); // 美国密西西比州
     EXPECT_EQ(test::suffix_array(s), std::vector<int>({10, 7, 4, 1, 0, 9, 8, 6, 3, 5, 2}));
 }
